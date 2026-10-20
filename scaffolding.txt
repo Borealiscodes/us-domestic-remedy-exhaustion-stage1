@@ -1,0 +1,169 @@
+scaffolding.txt
+
+Structural Integration Scaffolding — Grammar → Operators → Loader → Toolkit
+
+1. Purpose
+This scaffolding file defines how the core structural components of Stage‑1 connect:
+
+- visual‑grammar.json  
+- operator stubs  
+- loader extensions  
+- future toolkit modules  
+- Stage‑2 unlock logic  
+
+It ensures the system grows in a controlled, predictable, and stable way.
+
+---
+
+2. Grammar Loading
+The grammar is loaded as a single structured object containing:
+
+- nodes  
+- edges  
+- surfaces  
+- operators (declared, not executed)  
+
+Loader responsibilities:
+
+- read JSON  
+- validate structure  
+- expose grammar to operators  
+- provide safe access patterns  
+
+Grammar must load before any operator runs.
+
+---
+
+3. Operator Registration
+Operators are registered through a simple mapping:
+
+`
+holonomy → HolonomyOperator
+modal_lattice → ModalLatticeOperator
+collapse_surface → CollapseSurfaceDetector
+spectral_bundle → SpectralBundleOperator
+`
+
+Registration rules:
+
+- operators must expose a predictable interface  
+- operators must not mutate grammar  
+- operators must return structural outputs only  
+- operators must remain procedural, not interpretive  
+
+Operators run after grammar validation.
+
+---
+
+4. Execution Flow
+The loader executes operators in a stable order:
+
+1. Holonomy (loop detection)  
+2. Modal Lattice (act separation)  
+3. Collapse Surface (structural contradictions)  
+4. Spectral Bundle (cross‑layer interactions)  
+
+Execution rules:
+
+- each operator receives the same grammar object  
+- operators do not depend on each other’s outputs  
+- operators produce independent structural reports  
+- no operator may trigger Stage‑2 logic directly  
+
+---
+
+5. Report Assembly
+Operator outputs are collected into a unified structure:
+
+- holonomy_loops  
+- modallatticemap  
+- collapsesurfacereport  
+- spectralbundlemap  
+
+These reports feed:
+
+- structural documentation  
+- exhaustion summaries  
+- unlock logic checks  
+
+Report assembly must not modify operator outputs.
+
+---
+
+6. Toolkit Integration
+The toolkit extends loader functionality:
+
+- grammar_loader.py  
+- operator_runner.py  
+- validator.py  
+- report_builder.py  
+- graph_builder.py  
+- surface_mapper.py  
+- exhaustion_checker.py  
+
+Toolkit rules:
+
+- modules must remain independent  
+- modules must not embed legal reasoning  
+- modules must not embed interpretability semantics  
+- modules must operate only on structural primitives  
+
+Toolkit comes after operator test harnesses.
+
+---
+
+7. Unlock Logic Integration
+Unlock logic checks structural completeness:
+
+- all nodes documented  
+- all edges documented  
+- all surfaces mapped  
+- all operators tested  
+- all reports generated  
+- all contradictions resolved  
+- all nondiscretionary flows exhausted  
+
+Unlock logic is read‑only and must not modify grammar or operator outputs.
+
+Unlock logic comes after loader extensions.
+
+---
+
+8. Expansion Rules
+When adding new components:
+
+- new operators must follow the same interface  
+- new grammar primitives must be documented in dev_notes  
+- new toolkit modules must be independent  
+- new structural files must map to existing nodes/edges/surfaces  
+- Stage‑2 must remain locked until unlock conditions are met  
+
+This prevents architectural drift.
+
+---
+
+9. Summary
+This scaffolding defines the integration spine:
+
+- grammar → operators → loader → toolkit → unlock logic  
+
+It ensures the repo remains:
+
+- stable  
+- predictable  
+- extensible  
+- structurally coherent  
+- procedurally bounded  
+
+This file must be updated whenever the structural system evolves.
+
+---
+
+If you want, next step is:
+
+Operator Test Harnesses
+or  
+
+Loader Extensions (.py Toolkit core)
+
+Just tell me which direction you want to go.
