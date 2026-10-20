@@ -1,0 +1,196 @@
+{
+  "project": "US Domestic Remedy Exhaustion — Stage 1",
+  "version": "1.0",
+  "tasks": [
+    {
+      "id": "T01",
+      "layer": "01_federal_statutes",
+      "description": "Draft federal statute summaries for 18 USC 241, 242, and 2340A.",
+      "deliverables": ["241_conspiracy_rights.md", "242_color_of_law.md", "2340A_torture_extraterritorial.md"],
+      "priority": "high",
+      "dependencies": [],
+      "status": "not_started",
+      "completion": "All statute summaries drafted and internally consistent."
+    },
+    {
+      "id": "T02",
+      "layer": "01_federal_statutes",
+      "description": "Build statute interaction matrix mapping nondiscretionary duties and jurisdictional flows.",
+      "deliverables": ["statute_interaction_matrix.md"],
+      "priority": "medium",
+      "dependencies": ["T01"],
+      "status": "not_started",
+      "completion": "Matrix populated with cross‑statute interactions."
+    },
+    {
+      "id": "T03",
+      "layer": "01_federal_statutes",
+      "description": "Implement statute_graph.py to visualize federal statute interactions.",
+      "deliverables": ["statute_graph.py"],
+      "priority": "medium",
+      "dependencies": ["T02"],
+      "status": "not_started",
+      "completion": "Graph generation functional with roadmap.json input."
+    },
+    {
+      "id": "T04",
+      "layer": "02_judicial_branch_constraints",
+      "description": "Document judicial immunity boundaries and administrative vs judicial acts.",
+      "deliverables": ["judicial_immunity_map.md", "judicial_vs_administrative_acts.md"],
+      "priority": "high",
+      "dependencies": [],
+      "status": "not_started",
+      "completion": "Clear separation of judicial and non‑judicial acts established."
+    },
+    {
+      "id": "T05",
+      "layer": "02_judicial_branch_constraints",
+      "description": "Implement judicial_modal_lattice.py to model judicial vs administrative modalities.",
+      "deliverables": ["judicial_modal_lattice.py"],
+      "priority": "medium",
+      "dependencies": ["T04"],
+      "status": "not_started",
+      "completion": "Modal lattice operational and validated against documentation."
+    },
+    {
+      "id": "T06",
+      "layer": "03_municipal_policing_DC",
+      "description": "Document MPD nondiscretionary duties and Mayor oversight obligations.",
+      "deliverables": ["MPD_nondiscretionary_duties.md", "mayor_home_rule_duties.md"],
+      "priority": "high",
+      "dependencies": [],
+      "status": "not_started",
+      "completion": "Municipal duty map complete and cross‑referenced with federal statutes."
+    },
+    {
+      "id": "T07",
+      "layer": "03_municipal_policing_DC",
+      "description": "Implement nondiscretionary_duty_flow.py to visualize municipal duty flows.",
+      "deliverables": ["nondiscretionary_duty_flow.py"],
+      "priority": "medium",
+      "dependencies": ["T06"],
+      "status": "not_started",
+      "completion": "Flow visualization functional and integrated with roadmap.json."
+    },
+    {
+      "id": "T08",
+      "layer": "04_mandamus_DC_Court_of_Appeals",
+      "description": "Draft mandamus test and nondiscretionary duty analysis.",
+      "deliverables": ["mandamus_test.md", "nondiscretionary_duty_analysis.md"],
+      "priority": "high",
+      "dependencies": ["T06"],
+      "status": "not_started",
+      "completion": "Mandamus prerequisites mapped and linked to municipal failures."
+    },
+    {
+      "id": "T09",
+      "layer": "04_mandamus_DC_Court_of_Appeals",
+      "description": "Implement mandamus_structural_test.py for structural (non‑legal) mandamus evaluation.",
+      "deliverables": ["mandamus_structural_test.py"],
+      "priority": "medium",
+      "dependencies": ["T08"],
+      "status": "not_started",
+      "completion": "Structural test operational and validated against documentation."
+    },
+    {
+      "id": "T10",
+      "layer": "05_embassy_extraterritoriality",
+      "description": "Document embassy jurisdiction, host‑country interactions, and extraterritorial statute applicability.",
+      "deliverables": ["embassy_jurisdiction.md", "extraterritorial_statute_map.md"],
+      "priority": "high",
+      "dependencies": ["T01"],
+      "status": "not_started",
+      "completion": "Extraterritoriality map complete and consistent with federal statutes."
+    },
+    {
+      "id": "T11",
+      "layer": "05_embassy_extraterritoriality",
+      "description": "Implement extraterritoriality_matrix.py to compute jurisdictional applicability.",
+      "deliverables": ["extraterritoriality_matrix.py"],
+      "priority": "medium",
+      "dependencies": ["T10"],
+      "status": "not_started",
+      "completion": "Matrix functional and validated with sample scenarios."
+    },
+    {
+      "id": "T12",
+      "layer": "06_disability_rights",
+      "description": "Document disability‑rights barriers and CRPD Article 13 analogues.",
+      "deliverables": ["access_to_justice_barriers.md", "CRPD_article_13_analogues.md"],
+      "priority": "high",
+      "dependencies": [],
+      "status": "not_started",
+      "completion": "Barrier documentation complete and linked to mandamus analysis."
+    },
+    {
+      "id": "T13",
+      "layer": "06_disability_rights",
+      "description": "Implement disability_barrier_map.py to detect procedural collapse points.",
+      "deliverables": ["disability_barrier_map.py"],
+      "priority": "medium",
+      "dependencies": ["T12"],
+      "status": "not_started",
+      "completion": "Barrier map functional and integrated with roadmap.json."
+    },
+    {
+      "id": "T14",
+      "layer": "07_human_rights_defender",
+      "description": "Document HRD protections, retaliation patterns, and intimidation structures.",
+      "deliverables": ["HRD_protections.md", "retaliation_analysis.md"],
+      "priority": "high",
+      "dependencies": [],
+      "status": "not_started",
+      "completion": "HRD documentation complete and cross‑linked with federal statutes."
+    },
+    {
+      "id": "T15",
+      "layer": "07_human_rights_defender",
+      "description": "Implement hrd_pattern_detector.py to classify retaliation patterns.",
+      "deliverables": ["hrd_pattern_detector.py"],
+      "priority": "medium",
+      "dependencies": ["T14"],
+      "status": "not_started",
+      "completion": "Pattern detector functional with sample timelines."
+    },
+    {
+      "id": "T16",
+      "layer": "08_federal_LE_conflict_assessment",
+      "description": "Document compromised federal LE pathways and alternative domestic mechanisms.",
+      "deliverables": ["compromised_pathways.md", "alternative_domestic_mechanisms.md"],
+      "priority": "high",
+      "dependencies": ["T01", "T06"],
+      "status": "not_started",
+      "completion": "Conflict assessment complete and linked to exhaustion criteria."
+    },
+    {
+      "id": "T17",
+      "layer": "08_federal_LE_conflict_assessment",
+      "description": "Implement conflict_surface_detector.py to identify structural contradictions.",
+      "deliverables": ["conflict_surface_detector.py"],
+      "priority": "medium",
+      "dependencies": ["T16"],
+      "status": "not_started",
+      "completion": "Detector functional and validated with known contradictions."
+    },
+    {
+      "id": "T18",
+      "layer": "99_stage2_contingency",
+      "description": "Draft Stage‑2 contingency documentation (UK CJA 1988, POA s6(1)).",
+      "deliverables": ["UK_CJA_1988_section_134.md", "POA_section_6_private_prosecution.md"],
+      "priority": "locked",
+      "dependencies": ["T01", "T06", "T08", "T16"],
+      "status": "locked",
+      "completion": "Unlocked only after full Stage‑1 exhaustion."
+    },
+    {
+      "id": "T19",
+      "layer": "99_stage2_contingency",
+      "description": "Implement stage2_geometric_planner.py for structural contingency mapping.",
+      "deliverables": ["stage2_geometric_planner.py"],
+      "priority": "locked",
+      "dependencies": ["T18"],
+      "status": "locked",
+      "completion": "Activated only after Stage‑1 completion."
+    }
+  ]
+}
