@@ -1,0 +1,140 @@
+{
+  "project": "US Domestic Remedy Exhaustion — Stage 1",
+  "version": "1.0",
+  "purpose": "Structured documentation of all domestic mechanisms required before any international review.",
+  "context": {
+    "transnational_repression": true,
+    "icc_jurisdiction_over_us_nationals": false,
+    "iach_r_jurisdiction_over_us": false,
+    "domestic_exhaustion_required": true
+  },
+  "layers": [
+    {
+      "id": "01_federal_statutes",
+      "title": "Federal Criminal Statutes",
+      "deliverables": [
+        "241_conspiracy_rights.md",
+        "242_color_of_law.md",
+        "2340A_torture_extraterritorial.md",
+        "statute_interaction_matrix.md"
+      ],
+      "toolkits": [
+        "statute_graph.py"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "02_judicial_branch_constraints",
+      "title": "Judicial Branch Constraints",
+      "deliverables": [
+        "judicial_immunity_map.md",
+        "clerk_quasi_immunity.md",
+        "judicial_vs_administrative_acts.md"
+      ],
+      "toolkits": [
+        "judicial_modal_lattice.py"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "03_municipal_policing_DC",
+      "title": "Municipal Policing (DC)",
+      "deliverables": [
+        "DC_Code_Title_22.md",
+        "mayor_home_rule_duties.md",
+        "MPD_nondiscretionary_duties.md",
+        "mandamus_precedents.md"
+      ],
+      "toolkits": [
+        "nondiscretionary_duty_flow.py"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "04_mandamus_DC_Court_of_Appeals",
+      "title": "Mandamus (DC Court of Appeals)",
+      "deliverables": [
+        "mandamus_test.md",
+        "nondiscretionary_duty_analysis.md",
+        "disability_barrier_record.md",
+        "UNCAT_implications.md"
+      ],
+      "toolkits": [
+        "mandamus_structural_test.py"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "05_embassy_extraterritoriality",
+      "title": "Embassy & Extraterritorial Jurisdiction",
+      "deliverables": [
+        "embassy_jurisdiction.md",
+        "host_country_interaction.md",
+        "extraterritorial_statute_map.md"
+      ],
+      "toolkits": [
+        "extraterritoriality_matrix.py"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "06_disability_rights",
+      "title": "Disability Rights & Access to Justice",
+      "deliverables": [
+        "access_to_justice_barriers.md",
+        "CRPD_article_13_analogues.md",
+        "deliberate_indifference.md"
+      ],
+      "toolkits": [
+        "disability_barrier_map.py"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "07_human_rights_defender",
+      "title": "Human Rights Defender Protections",
+      "deliverables": [
+        "HRD_protections.md",
+        "retaliation_analysis.md",
+        "intimidation_patterns.md"
+      ],
+      "toolkits": [
+        "hrd_pattern_detector.py"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "08_federal_LE_conflict_assessment",
+      "title": "Federal Law Enforcement Conflict Assessment",
+      "deliverables": [
+        "compromised_pathways.md",
+        "conflict_of_interest_map.md",
+        "alternative_domestic_mechanisms.md"
+      ],
+      "toolkits": [
+        "conflict_surface_detector.py"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "99_stage2_contingency",
+      "title": "Stage 2 Contingency (Foreign Jurisdiction)",
+      "deliverables": [
+        "UK_CJA_1988_section_134.md",
+        "POA_section_6_private_prosecution.md",
+        "stage2_transition_protocol.md"
+      ],
+      "toolkits": [
+        "stage2_geometric_planner.py"
+      ],
+      "status": "locked_until_stage1_complete"
+    }
+  ],
+  "meta": {
+    "maintainer": "Borealis",
+    "repo_type": "research_documentation",
+    "legal_advice": false,
+    "stage": "1",
+    "notes": "Stage 2 activates only after full domestic exhaustion."
+  }
+}
