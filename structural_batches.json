@@ -1,0 +1,45 @@
+{
+  "batches": [
+    {
+      "id": "batch_1_layers",
+      "description": "Documentation for each node in the visual grammar.",
+      "directory": "layers/",
+      "expected_contents": "One file per node (N01–N08, N99)."
+    },
+    {
+      "id": "batch_2_surfaces",
+      "description": "Documentation for collapse surfaces defined in the grammar.",
+      "directory": "surfaces/",
+      "expected_contents": "One file per collapse surface (S01–S03)."
+    },
+    {
+      "id": "batch_3_flows",
+      "description": "Documentation for edges representing exhaustion pathways.",
+      "directory": "flows/",
+      "expected_contents": "One file per edge (e.g., N01_to_N03)."
+    },
+    {
+      "id": "batch_4_operator_outputs",
+      "description": "Human-readable templates for operator results.",
+      "directory": "operators_output/",
+      "expected_contents": "holonomy_loops.md, modal_lattice_map.md, collapse_surface_report.md, spectral_bundle_map.md"
+    },
+    {
+      "id": "batch_5_structural_reports",
+      "description": "System-level structural summaries.",
+      "directory": "reports/",
+      "expected_contents": "structural_map.md, exhaustion_summary.md, surface_map.md, flow_map.md"
+    },
+    {
+      "id": "batch_6_stage1_summaries",
+      "description": "Final checkpoint files before Stage-2 unlock evaluation.",
+      "directory": "stage1/",
+      "expected_contents": "stage1_summary.md, stage1_completion_checklist.md, stage1_operator_results.md"
+    }
+  ],
+  "notes": {
+    "toolkit_dependency": false,
+    "purpose": "Provides machine-readable batching metadata for diagnostics and unlock logic.",
+    "relation_to_dev_note": "Companion to STRUCTURAL_BATCHING_NOTE.md; not used by operators or loader."
+  }
+}
