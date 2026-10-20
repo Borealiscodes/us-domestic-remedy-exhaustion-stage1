@@ -267,8 +267,3 @@ This is Stage 1 of that documentation.
 
 ---
 
-If you want, I can now generate:
-
-- the repo scaffolding,  
-- the first deliverable,  
-- or the Python toolkit stubs.
