@@ -1,0 +1,15 @@
+{
+  "required": {
+    "nodes_documented": true,
+    "edges_documented": true,
+    "surfaces_mapped": true,
+    "operators_tested": true,
+    "reports_generated": true,
+    "collapse_surfaces_resolved": true,
+    "nondiscretionary_flows_exhausted": true,
+    "mandamus_pathways_documented": true,
+    "federal_conflict_surfaces_assessed": true
+  },
+  "stage2_node": "N09",
+  "description": "Structural completeness conditions required before activating foreign-jurisdiction contingency."
+}
