@@ -1,0 +1,128 @@
+{
+  "project": "US Domestic Remedy Exhaustion — Stage 1",
+  "grammar_version": "1.0",
+  "primitives": {
+    "node": "A discrete structural unit (layer, statute set, duty cluster).",
+    "edge": "A directional relationship or dependency between nodes.",
+    "surface": "A region where multiple edges converge, often representing collapse points or contradictions.",
+    "operator": "A geometric transformation applied to nodes/edges/surfaces to reveal structure."
+  },
+  "nodes": [
+    { "id": "N01", "label": "Federal Statutes", "layer": "01_federal_statutes" },
+    { "id": "N02", "label": "Judicial Constraints", "layer": "02_judicial_branch_constraints" },
+    { "id": "N03", "label": "Municipal Policing (DC)", "layer": "03_municipal_policing_DC" },
+    { "id": "N04", "label": "Mandamus (DC Court of Appeals)", "layer": "04_mandamus_DC_Court_of_Appeals" },
+    { "id": "N05", "label": "Embassy Extraterritoriality", "layer": "05_embassy_extraterritoriality" },
+    { "id": "N06", "label": "Disability Rights", "layer": "06_disability_rights" },
+    { "id": "N07", "label": "Human Rights Defender Protections", "layer": "07_human_rights_defender" },
+    { "id": "N08", "label": "Federal LE Conflict Assessment", "layer": "08_federal_LE_conflict_assessment" },
+    { "id": "N09", "label": "Stage‑2 Contingency", "layer": "99_stage2_contingency", "locked": true }
+  ],
+  "edges": [
+    {
+      "from": "N01",
+      "to": "N03",
+      "type": "nondiscretionary_duty_flow",
+      "description": "Federal statutes impose duties that intersect with municipal enforcement obligations."
+    },
+    {
+      "from": "N03",
+      "to": "N04",
+      "type": "mandamus_dependency",
+      "description": "Municipal failures create conditions for mandamus review."
+    },
+    {
+      "from": "N02",
+      "to": "N04",
+      "type": "judicial_constraint_flow",
+      "description": "Judicial immunity and administrative boundaries shape mandamus viability."
+    },
+    {
+      "from": "N01",
+      "to": "N05",
+      "type": "extraterritorial_statute_flow",
+      "description": "Federal statutes define extraterritorial applicability for embassy conduct."
+    },
+    {
+      "from": "N06",
+      "to": "N04",
+      "type": "access_barrier_flow",
+      "description": "Disability barriers affect access to mandamus and procedural remedies."
+    },
+    {
+      "from": "N07",
+      "to": "N08",
+      "type": "retaliation_pattern_flow",
+      "description": "HRD retaliation patterns inform federal LE conflict assessment."
+    },
+    {
+      "from": "N08",
+      "to": "N04",
+      "type": "conflict_surface_flow",
+      "description": "Federal LE conflicts influence mandamus pathways."
+    },
+    {
+      "from": "N01",
+      "to": "N09",
+      "type": "stage2_activation_condition",
+      "description": "Stage‑2 remains locked until federal statute pathways are exhausted."
+    },
+    {
+      "from": "N04",
+      "to": "N09",
+      "type": "stage2_activation_condition",
+      "description": "Mandamus outcomes determine Stage‑2 eligibility."
+    }
+  ],
+  "surfaces": [
+    {
+      "id": "S01",
+      "label": "Municipal Collapse Surface",
+      "nodes": ["N03", "N04", "N06"],
+      "description": "Intersection of municipal nondiscretionary duties, mandamus prerequisites, and disability barriers."
+    },
+    {
+      "id": "S02",
+      "label": "Federal Conflict Surface",
+      "nodes": ["N01", "N07", "N08"],
+      "description": "Region where federal statutes, HRD retaliation patterns, and LE conflicts converge."
+    },
+    {
+      "id": "S03",
+      "label": "Extraterritoriality Surface",
+      "nodes": ["N01", "N05"],
+      "description": "Region mapping extraterritorial statute applicability to embassy conduct."
+    }
+  ],
+  "operators": [
+    {
+      "id": "O01",
+      "label": "Holonomy Operator",
+      "description": "Detects loops in jurisdictional flows (e.g., municipal → judicial → municipal)."
+    },
+    {
+      "id": "O02",
+      "label": "Modal Lattice Operator",
+      "description": "Separates judicial vs administrative acts within the judicial branch."
+    },
+    {
+      "id": "O03",
+      "label": "Collapse Surface Detector",
+      "description": "Identifies structural contradictions or remedy failures across surfaces."
+    },
+    {
+      "id": "O04",
+      "label": "Spectral Bundle Operator",
+      "description": "Maps interactions between federal statutes and downstream duty flows."
+    }
+  ],
+  "activation_rules": {
+    "stage2_locked": true,
+    "unlock_conditions": [
+      "All Stage‑1 tasks completed",
+      "All nondiscretionary duty flows documented",
+      "All collapse surfaces mapped",
+      "Mandamus pathways fully exhausted"
+    ]
+  }
+}
